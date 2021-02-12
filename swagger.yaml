@@ -60,13 +60,3 @@ paths:
       responses:
         200:
           description: "successful operation"
-   
-definitions:
-  Cartcost:
-    type: "object"
-    required:
-    - "total"
-    properties:
-      total:
-        type: "number"
-        format: "float"

@@ -30,12 +30,20 @@ paths:
       summary: "check cart total cost"
       description: ""
       operationId: "check cart"
+      parameters:
+        - in: body
+          name: total
+          schema:
+            type: '#/components/schemas/Cartcost:'
+            example: { "total": 10.1 }
+          required: true
+          description: Numeric key value pair of the checkout total cost
       responses:
         200:
           description: "successful operation"
           schema:
-            type: '#/components/schemas/Cartcost:'
-            example: { "total": 10.1 }
+            type: string
+            example: 'invalid'
   /:
     get:
       tags:

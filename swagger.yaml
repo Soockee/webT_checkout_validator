@@ -8,7 +8,7 @@ info:
 host: "localhost:8084"
 basePath: "/"
 tags:
-- name: "product"
+- name: "Cart"
   description: "Everything about your cart"
 schemes:
 - "http"
@@ -47,7 +47,7 @@ paths:
   /:
     get:
       tags:
-      - "coffee"
+      - "cart"
       summary: "Welcome Text"
       description: "Welcomes You"
       operationId: "welcome"

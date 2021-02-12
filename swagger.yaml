@@ -24,19 +24,18 @@ paths:
       responses:
         200:
           description: "successful operation"
-          
-     post:
-        tags:
-        - "cart"
-        summary: "check cart total cost"
-        description: ""
-        operationId: "check cart"
-        responses:
-          200:
-            description: "successful operation"
-            schema:
-              type: '#/components/schemas/Cartcost:'
-              example: { "total": 10.1 }
+    post:
+      tags:
+      - "cart"
+      summary: "check cart total cost"
+      description: ""
+      operationId: "check cart"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: '#/components/schemas/Cartcost:'
+            example: { "total": 10.1 }
   /:
     get:
       tags:

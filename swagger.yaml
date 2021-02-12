@@ -34,8 +34,14 @@ paths:
         - in: body
           name: total
           schema:
-            type: '#/components/schemas/Cartcost:'
-            example: { "total": 10.1 }
+            type: "object"
+            required:
+            - "total"
+            properties:
+              total:
+                type: "number"
+                format: "float"
+          example: { "total": 10.1 }
           required: true
           description: Numeric key value pair of the checkout total cost
       responses:
